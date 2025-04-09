@@ -1,0 +1,26 @@
+def guess_secret(word: str, secert: str, inx: int = 0) -> bool:
+    if len(word) != len(secert) :
+        print("words are different length")
+        return False 
+    else :
+        print ("words are the same length")
+        return False 
+    if word[idx] != secret[idx] :
+        print (f"{word[inx]} isnt the next letter")
+        return False 
+    
+    else:
+        return guess_secret(word=word, secert=secert, inx=inx + 1)
+
+
+
+
+def safe_icarus(x: int) -> int: 
+    """bound aspirations"""
+    while x >= 2: 
+       return x -= 1
+    return 1 
+
+print(safe_icarus(x=0))
+
+
